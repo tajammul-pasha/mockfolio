@@ -42,7 +42,6 @@ nav {
   color: rgb(19, 18, 18);
   font-size: 0.9rem;
   letter-spacing: 0.5px;
-  /* transition: color ease 0.5s, opacity ease 0.5s; */
   opacity: 0.8;
 }
 
@@ -60,4 +59,27 @@ nav {
   padding-left: 1rem;
 }
 
-/* Typography */
+.header-left,
+.header-right {
+  display: none;
+}
+
+.header-menu {
+  color: rgb(19, 18, 18);
+  opacity: 0.5;
+  padding: 5px;
+  border: 1px solid blue;
+  border-radius: 2.5px;
+}
+
+/* media queries */
+@media (min-width: 960px) {
+  .header-left,
+  .header-right {
+    display: block;
+  }
+
+  .header-menu {
+    display: none;
+  }
+}
