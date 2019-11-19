@@ -103,7 +103,7 @@ nav {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(22, 21, 21, 0.9);
+  background-color: rgba(222, 222, 222, 0.9);
   z-index: 2;
   animation: slideInUp 2000ms forwards;
   display: none;
@@ -125,7 +125,7 @@ nav {
 }
 
 .nav-link {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 400;
