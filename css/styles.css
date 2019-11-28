@@ -105,7 +105,9 @@ nav {
   height: 100%;
   background-color: rgba(222, 222, 222, 0.9);
   z-index: 2;
-  animation: slideInUp 2000ms forwards;
+  /* animation: slideInUp 2000ms forwards; */
+  animation: fromBottom 0.5s forwards;
+
   display: none;
 }
 
@@ -117,7 +119,7 @@ nav {
   /* background-color: green; */
   list-style: none;
   height: 100%;
-  animation: slideInUp 2000ms forwards;
+  /* animation: slideInUp 2000ms forwards; */
 }
 
 .nav-list li {
@@ -132,6 +134,16 @@ nav {
   text-decoration: none;
 }
 
+@keyframes fromBottom {
+  0% {
+    opacity: 0.1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .nav-link:hover,
 .nav-link:focus {
   opacity: 0.7;
